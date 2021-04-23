@@ -34,4 +34,12 @@ func main() {
 // this is foo function
 func foo(){
 	fmt.Println("Running foo function: ", z)
+	fmt.Printf("%T\n", z)
+	fmt.Printf("%b\n", z) // binario
+	fmt.Printf("%x\n", z) // base 16 lowe-case 
+	// %X is upper case
+	fmt.Printf("%#x\n", z)  // for hex
+
+	s := fmt.Sprintf("%b", z)
+	fmt.Println(s)
 }
