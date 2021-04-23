@@ -12,4 +12,5 @@ func main() {
 	b = 1020
 	fmt.Println(b)
 	fmt.Printf("%T\n", b)
+	a = int(b)
 }
