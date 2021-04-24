@@ -11,6 +11,20 @@ var b bujosa
 var x bool 
 var y float64
 
+// use constants
+const ww = 42
+const www = 42.28
+const w = "Bujosa"
+
+// Other format 
+
+// const (
+//  ww = 42
+//  www = 42.28
+//  w = "Bujosa"
+// )
+
+
 // Use own type
 func main() {
 	b = 1020
@@ -38,4 +52,15 @@ func main() {
 	for i, v := range s {
 		fmt.Println(i, v)
 	}
+
+	test()
+}
+
+func test(){
+	fmt.Println(w)
+	fmt.Println(ww)
+	fmt.Println(www)
+	fmt.Printf("%T\n",w)
+	fmt.Printf("%T\n",ww)
+	fmt.Printf("%T\n",www)
 }
