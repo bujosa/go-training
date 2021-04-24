@@ -64,3 +64,5 @@ func test(){
 	fmt.Printf("%T\n",ww)
 	fmt.Printf("%T\n",www)
 }
+
+// iota increment
