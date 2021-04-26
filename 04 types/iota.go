@@ -1,4 +1,4 @@
-package main 
+package main
 
 import (
 	"fmt"
@@ -10,6 +10,8 @@ const (
 	b
 	c
 )
+
+// example wit ioda
 
 const (
 	_ = iota
@@ -28,4 +30,3 @@ func main() {
 	fmt.Printf("%d\t\t%b\n", gb, gb)
 }
 
-// example wit ioda
