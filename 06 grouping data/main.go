@@ -34,4 +34,32 @@ func main() {
 	fmt.Println(a)
 	fmt.Println(len(a))
 	fmt.Println(cap(a))
+
+	// multi-dimensional slice
+	jb:= []string{"Bujosa", "Faiella"}
+	mp:= []string {"David", "Sebastiano"}
+	xp:= [][]string{jb, mp}
+	fmt.Println(xp)
+
+	// uses map
+
+	m := map[string]int{
+		"Bujosa":21,
+		"Faiella":24,
+	}
+	fmt.Println(m)
+	fmt.Println(m["Faiella"])
+	v, ok := m["Ogando"]
+	fmt.Println(v)
+	fmt.Println(ok)
+
+	m["Ogando"] = 21
+	fmt.Println(m)
+
+	for k, v := range m {
+		fmt.Println(k, v)
+	}
+
+	delete(m, "Ogando")
+	fmt.Println(m)
 }
