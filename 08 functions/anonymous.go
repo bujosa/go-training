@@ -17,4 +17,13 @@ func main() {
 	 }
 
 	 f()
+
+	 // return a func
+	 s1 := foo()
+	 fmt.Println(s1)
+}
+
+func foo() string {
+	s := "Hello world"
+	return s
 }
