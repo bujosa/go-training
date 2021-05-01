@@ -5,5 +5,11 @@ import (
 )
 
 func main() {
-	fmt.Println("Hi")
+	fmt.Println(bar()())
+}
+
+func bar() func() int {
+	return func() int {
+		return 451
+	}
 }
