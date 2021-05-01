@@ -5,14 +5,14 @@ import (
 )
 
 func main(){
-	foo()
+	foo(1, 2, 3, 4)
 	bar("Bujosa")
 	x, y := compare("Bujosa", "Faiella")
 	fmt.Println(x, y)
 }
 
-func foo() {
-	fmt.Println("Hello I AM B U J O S A")
+func foo(x ...int) {
+	fmt.Println(x)
 }
 
 // Everything in Go is "PASS BY VALUE"
