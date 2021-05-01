@@ -33,4 +33,18 @@ func main() {
 	fmt.Println(p1)
 	fmt.Println(p2)
 	fmt.Println(sa)
+
+	// anonymous struct
+
+	p3 := struct {
+		first string
+		last string 
+		age int 
+	}{
+		first: "David",
+		last: "Bujosa",
+		age: 21,
+	}
+
+	fmt.Println(p3)
 }
