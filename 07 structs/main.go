@@ -9,6 +9,11 @@ type person struct {
 	last  string
 }
 
+type secretAgent struct {
+	person
+	ltk bool
+}
+
 func main() {
 	p1 := person{
 		first: "David",
@@ -20,6 +25,12 @@ func main() {
 		last:  "Faiella",
 	}
 
+	sa := secretAgent{
+		person: p1,
+		ltk: true,
+	}
+
 	fmt.Println(p1)
 	fmt.Println(p2)
+	fmt.Println(sa)
 }
