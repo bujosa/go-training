@@ -27,4 +27,6 @@ func main() {
 	}
 
 	fmt.Println(string(bs))
+
+	// uses unmarshal for eliminated tags
 }
