@@ -18,13 +18,19 @@ func main() {
 	var wg sync.WaitGroup
 	wg.Add(gs)
 
+	// uses mutex
+
+	var mu sync.Mutex
+
 	for i := 0; i < gs; i++ {
 		go func() {
+			mu.Lock()
 			v := counter
 			//time.Sleep(time.Second)
 			runtime.Gosched()
 			v++
 			counter = v
+			mu.Unlock()
 			wg.Done()
 		}()
 		fmt.Println("Goroutine:", runtime.NumGoroutine())
