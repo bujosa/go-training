@@ -5,5 +5,11 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello world")
+	c := make(chan int)
+
+	go func(){
+		c <- 42
+	}()
+
+	fmt.Println(<-c)
 }
