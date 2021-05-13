@@ -6,10 +6,8 @@ func main() {
 	c := make(chan int)
 	// send
 	go foo(c)
-
 	//receive
 	go bar(c)
-
 	fmt.Println("about to exit")
 }
 
