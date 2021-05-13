@@ -20,3 +20,6 @@ func foo(c chan<- int) {
 func bar(c <-chan int) {
 	fmt.Println(<-c)
 }
+
+
+// go routunes concurrenly running
