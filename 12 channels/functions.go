@@ -7,7 +7,8 @@ func main() {
 	// send
 	go foo(c)
 	//receive
-	go bar(c)
+	bar(c)
+	
 	fmt.Println("about to exit")
 }
 
