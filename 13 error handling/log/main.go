@@ -19,7 +19,7 @@ func main() {
 	_, err = os.Open("no-file.txt")
 
 	if err != nil{
-	   log.Fatalln(err)
+	   log.Fatalln(err) // is equivalent to println() followed by a call to os.Exit(1)
 	}
 
 	fmt.Println(n)
