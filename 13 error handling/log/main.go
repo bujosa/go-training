@@ -19,8 +19,7 @@ func main() {
 	_, err = os.Open("no-file.txt")
 
 	if err != nil{
-	   log.Println("err happened", err)
-	   panic(err) // use panic
+	   log.Fatalln(err)
 	}
 
 	fmt.Println(n)
