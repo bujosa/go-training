@@ -6,13 +6,11 @@ import (
 	"os"
 )
 
-
 func main() {
 
 	defer foo()
 
 	// file
-
 	_, err := os.Open("no-file.txt")
 
 	if err != nil{
