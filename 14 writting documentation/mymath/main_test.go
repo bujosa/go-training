@@ -3,6 +3,8 @@ package mymathtwo
 import (
 	"fmt"
 	"testing"
+
+	"github.com/GoesToEleven/go-programming/code_samples/007-documentation/01/mymath"
 )
 
 func TestSum(t *testing.T) {
@@ -17,7 +19,7 @@ func TestSum(t *testing.T) {
 	}
 
 	for _, v := range tests {
-		x :=Sum(v.data...)
+		x :=mymath.Sum(v.data...)
 		if x != v.answer {
 			t.Error("Expected", v.answer, "Got", x)
 		}
@@ -25,5 +27,5 @@ func TestSum(t *testing.T) {
 }
 
 func ExampleSum() {
-	fmt.Println(Sum(2, 3))
+	fmt.Println(mymath.Sum(2, 3))
 }
